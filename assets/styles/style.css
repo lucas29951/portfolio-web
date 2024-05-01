@@ -465,8 +465,15 @@ span {
     padding-bottom: 1.5rem;
 }
 
-.education .content .decs p {
-    font-size: 1.5rem;
+.education .content .decs .inst {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--text-color-dark);
+}
+
+.education .content .decs .dates {
+    font-size: 1.4rem;
     font-weight: 400;
     font-style: italic;
     color: var(--text-color-dark);
