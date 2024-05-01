@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --bg-color: #fff;
+    --bg-color-dark: #000000;
+    --second-bg-color: #f0f0f0;
+    --second-bg-color-dark: #161616;
+    --text-color: #000000;
+    --text-color-dark: #fff;
+    --main-color: #ff3300;
+    --main-color-dark: #00eeff;
+    --bg-header: rgba(128, 128, 128, 0.3);
+    --bg-header-dark: rgba(0, 0, 0, 0.7);
+    --color-icon: white;
+    --color-icon-dark: black;
+    --timeline-color: #ff330085;
+    --timeline-color-dark: #00eeff85;
+    --bg-skills: #ff480046;
+    --bg-skills-dark: #00eeff46;
+    --bg-timeline: #df754bb0;
+    --bg-timeline-dark: #4bd5dfb0;
+    --border-nav: rgba(0, 0, 0, 0.1);
+    --color-error: rgba(255, 0, 0, 0.37);
+    --color-error-dark: rgb(255, 95, 95);
+    --color-success: rgba(0, 255, 21, 0.37);
+    --color-success-dark: rgb(59, 255, 75);
+}
