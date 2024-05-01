@@ -8,6 +8,9 @@ let navbar = document.querySelector('.navbar');
 
 let themeIcon = document.querySelector('#change-theme');
 
+const contactForm = document.getElementById('contact-form');
+const contactMessage = document.getElementById('form-message');
+
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('fa-bars');
@@ -26,3 +29,37 @@ themeIcon.onclick = () => {
         element.classList.toggle('dark-theme');
     });
 }
+
+const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_1di1xpg','template_y5py13c','#contact-form','R5jvvMsKpHPyuM2Qu')
+    .then(() => {
+        contactMessage.textContent = 'Mensaje enviado con exito!';
+        contactMessage.style.display = "block";
+        
+        if (mainBody.classList.contains('dark-theme')) { 
+            contactMessage.style.background = "var(--color-success-dark)";
+        } else { 
+            contactMessage.style.background = "var(--color-success)"; 
+        }
+
+        setTimeout(() => {
+            contactMessage.textContent = '';
+            contactMessage.style.display = "none";
+        }, 5000)
+
+        contactForm.reset();
+    }, () => {
+        contactMessage.textContent = 'Mensaje no enviado! (Error de servicio).';
+        contactMessage.style.display = "block";
+
+        if (mainBody.classList.contains('dark-theme')) { 
+            contactMessage.style.background = "var(--color-error-dark)";
+        } else { 
+            contactMessage.style.background = "var(--color-error)"; 
+        }
+    })
+};
+
+contactForm.addEventListener('submit', sendEmail);
