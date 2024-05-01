@@ -596,6 +596,244 @@ span {
 }
 
 
+@media (max-width: 1285px) {
+    html {
+        font-size: 55%;
+    }
+
+    .services-container {
+        padding-bottom: 7rem;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 3rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .home {
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 995px) {
+    .logo {
+        font-size: 2.5rem;
+        margin-right: calc(100% - 15rem);
+    }
+
+    #change-theme {
+        font-size: 3rem;
+        margin-right: 3rem;
+    }
+
+    #menu-icon {
+        display: block;
+        transition: 0.3s ease;
+        order: 1;
+    }
+
+    .bx-x {
+        transform: rotate(90deg);
+        transition: 0.3s ease;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid var(--main-color);
+        border-bottom: 3px solid var(--main-color);
+        border-bottom-left-radius: 2rem;
+        padding: 1rem 3%;
+        background-color: var(--second-bg-color);
+        border-top: 0.1rem solid var(--border-nav);
+        display: none;
+    }
+
+    .navbar.dark-theme {
+        border-left: 3px solid var(--main-color-dark);
+        border-bottom: 3px solid var(--main-color-dark);
+        background-color: var(--second-bg-color-dark);
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .navbar a:hover,
+    .navbar.active {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid var(--main-color);
+    }
+
+    .navbar a.dark-theme:hover,
+    .navbar.active.dark-theme {
+        border-bottom: 0.5rem solid var(--main-color-dark);
+    }
+
+    .home {
+        flex-direction: column;
+        margin: 0 4rem;
+    }
+
+    .home .home-content h3 {
+        font-size: 2.5rem;
+    }
+
+    .home .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-img img {
+        width: 35vw;
+        margin-top: 4rem;
+    }
+
+    .skills .container {
+        width: 90%;
+        margin-bottom: 2.5rem;
+    }
+
+    .skills .container .row {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 1rem;
+        padding: 1rem 0.2rem 1rem 0.2rem;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .services {
+        padding-bottom: 7rem;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 895px) {
+    .services h2 {
+        margin-bottom: 3rem;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        margin-right: calc(100% - 16.5rem);
+    }
+
+    .home .home-content h1 {
+        font-size: 3rem;
+    }
+
+    .home .home-content h3 {
+        font-size: 2.25rem;
+    }
+
+    .home .home-content .typing-text {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .home-img img {
+        width: 55vw;
+        margin-top: 1.5rem;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .service-box {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .service-box {
+        height: 550px;
+    }
+
+    .skills .container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .skills .container .row {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1rem;
+        padding: 2rem 0.2rem 2rem 0.2rem;
+        gap: 1rem;
+    }
+
+    .skills .container {
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    .education .timeline {
+        margin-top: 2rem;
+    }
+
+    .education .timeline::after {
+        left: 31px;
+    }
+
+    .education .container {
+        width: 100%;
+        padding-left: 8rem;
+        padding-right: 2rem;
+    }
+
+    .education .container::after {
+        font-size: 2.2rem;
+    }
+
+    .education .container::before {
+        left: 61px;
+        border: medium solid var(--main-color);
+        border-width: 10px 10px 10px 0;
+        border-color: transparent var(--main-color) transparent transparent;
+    }
+
+    .education .container.dark-theme::before {
+        border: medium solid var(--main-color-dark);
+        border-color: transparent var(--main-color-dark) transparent transparent;
+    }
+
+    .education .left::after {
+        left: 15px;
+    }
+
+    .education .right::after {
+        left: 15px;
+    }
+
+    .education .right {
+        left: 0%;
+    }
+}
+
 
 @keyframes cursor {
     to {
