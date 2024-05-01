@@ -922,6 +922,11 @@ span.dark-theme {
         padding: 2rem 3%;
     }
 
+    .home-img img {
+        width: 55vw;
+        margin-top: 0;
+    }
+
     section {
         padding: 10rem 3% 2rem;
     }
@@ -936,6 +941,10 @@ span.dark-theme {
 }
 
 @media (max-width: 895px) {
+    .heading {
+        font-size: 5rem;
+    }
+
     .services h2 {
         margin-bottom: 3rem;
     }
@@ -978,6 +987,10 @@ span.dark-theme {
 }
 
 @media screen and (max-width: 600px) {
+    .heading {
+        font-size: 4rem;
+    }
+
     .service-box {
         height: 550px;
     }
