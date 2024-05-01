@@ -311,7 +311,7 @@ span {
     color: var(--text-color);
     border-radius: 1rem;
     padding: 2rem;
-    width: 70%;
+    width: 90%;
     margin: auto;
     margin-top: 2rem;
 }
@@ -346,8 +346,8 @@ span {
 }
 
 .skills .container .bar .info img {
-    width: 4rem;
-    height: 4rem;
+    width: 7rem;
+    height: 7rem;
 }
 
 .skills .container .bar .info span {
