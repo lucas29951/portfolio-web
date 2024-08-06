@@ -81,7 +81,7 @@ body.dark-theme {
     color: var(--main-color);
     cursor: pointer;
     transition: 0.5s ease;
-    margin-right: 45%;
+    margin-right: 35%;
 }
 
 .logo.dark-theme {
@@ -638,12 +638,80 @@ span.dark-theme {
     font-weight: 400;
 }
 
-.contact {
+.projects {
     background: var(--bg-color);
 }
 
-.contact.dark-theme {
+.projects.dark-theme {
     background: var(--bg-color-dark);
+}
+
+.projects .container {
+    color: var(--text-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.projects .container.dark-theme {
+    color: var(--text-color-dark);
+}
+
+.projects .container .row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.projects .container .bar {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 1rem;
+    background: var(--bg-skills);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.projects .container .bar.dark-theme {
+    background: var(--bg-skills-dark);
+}
+
+.projects .container .bar:hover {
+    box-shadow: 0 4px 10px var(--main-color);
+    transform: scale(1.03);
+}
+
+.projects .container .bar.dark-theme:hover {
+    box-shadow: 0 4px 10px var(--main-color-dark);
+}
+
+.projects .container .bar .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.projects .container .bar .info img {
+    width: 100%;
+}
+
+.projects .container .bar .info span {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+.contact {
+    background: var(--second-bg-color);
+}
+
+.contact.dark-theme {
+    background: var(--second-bg-color-dark);
 }
 
 .contact h2 {
@@ -674,7 +742,7 @@ span.dark-theme {
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    background: var(--bg-color);
+    background: var(--second-bg-color);
     border-radius: 0.8rem;
     border: 2px solid var(--main-color);
     margin: 1rem 0;
@@ -684,7 +752,7 @@ span.dark-theme {
 .contact form .input-box input.dark-theme,
 .contact form textarea.dark-theme {
     color: var(--text-color-dark);
-    background: var(--bg-color-dark);
+    background: var(--second-bg-color-dark);
     border: 2px solid var(--main-color-dark);
 }
 
@@ -705,6 +773,7 @@ span.dark-theme {
 
 .contact form .btn {
     margin-top: 2rem;
+    background: var(--second-bg-color-dark);
 }
 
 .footer {
@@ -915,6 +984,18 @@ span.dark-theme {
         padding: 1rem 0.2rem 1rem 0.2rem;
         gap: 1rem;
     }
+
+    .projects .container {
+        width: 90%;
+        margin-bottom: 2.5rem;
+    }
+
+    .projects .container .row {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 1rem;
+        padding: 1rem 0.2rem 1rem 0.2rem;
+        gap: 1rem;
+    }
 }
 
 @media (max-width: 991px) {
@@ -1052,6 +1133,23 @@ span.dark-theme {
 
     .education .right {
         left: 0%;
+    }
+
+    .projects .container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .projects .container .row {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1rem;
+        padding: 2rem 0.2rem 2rem 0.2rem;
+        gap: 1rem;
+    }
+
+    .projects .container {
+        margin-top: 5px;
+        width: 100%;
     }
 }
 
