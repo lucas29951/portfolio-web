@@ -649,7 +649,6 @@ span.dark-theme {
 .projects .container {
     color: var(--text-color);
     border-radius: 1rem;
-    padding: 2rem;
     width: 100%;
     margin: auto;
     margin-top: 2rem;
@@ -661,7 +660,7 @@ span.dark-theme {
 
 .projects .container .row {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     flex-wrap: wrap;
     gap: 1.5rem;
 }
@@ -670,13 +669,8 @@ span.dark-theme {
     margin-bottom: 15px;
     padding: 10px;
     border-radius: 1rem;
-    background: var(--bg-skills);
     transition: 0.3s ease;
     cursor: pointer;
-}
-
-.projects .container .bar.dark-theme {
-    background: var(--bg-skills-dark);
 }
 
 .projects .container .bar:hover {
@@ -698,6 +692,7 @@ span.dark-theme {
 
 .projects .container .bar .info img {
     width: 100%;
+    border-radius: 1rem;
 }
 
 .projects .container .bar .info span {
@@ -991,7 +986,7 @@ span.dark-theme {
     }
 
     .projects .container .row {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         margin: 1rem;
         padding: 1rem 0.2rem 1rem 0.2rem;
         gap: 1rem;
@@ -1141,7 +1136,7 @@ span.dark-theme {
     }
 
     .projects .container .row {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         margin: 1rem;
         padding: 2rem 0.2rem 2rem 0.2rem;
         gap: 1rem;
