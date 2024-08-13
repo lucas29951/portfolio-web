@@ -674,12 +674,12 @@ span.dark-theme {
 }
 
 .projects .container .bar:hover {
-    box-shadow: 0 4px 10px var(--main-color);
+    box-shadow: 0 0 13px var(--main-color);
     transform: scale(1.03);
 }
 
 .projects .container .bar.dark-theme:hover {
-    box-shadow: 0 4px 10px var(--main-color-dark);
+    box-shadow: 0 0 13px var(--main-color-dark);
 }
 
 .projects .container .bar .info {
