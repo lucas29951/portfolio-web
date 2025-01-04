@@ -768,7 +768,22 @@ span.dark-theme {
 
 .contact form .btn {
     margin-top: 2rem;
+    background: var(--second-bg-color);
+}
+
+.contact form .btn:hover {
+    margin-top: 2rem;
+    background: var(--main-color);
+}
+
+.contact form .btn.dark-theme {
+    margin-top: 2rem;
     background: var(--second-bg-color-dark);
+}
+
+.contact form .btn.dark-theme:hover {
+    margin-top: 2rem;
+    background: var(--main-color-dark);
 }
 
 .footer {
